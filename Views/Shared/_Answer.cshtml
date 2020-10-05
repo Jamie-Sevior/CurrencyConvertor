@@ -1,0 +1,11 @@
+﻿@model Currency_Converter.Models.ConvertedMoney
+
+@if(Model.currency.Type!= "error" && !String.IsNullOrEmpty(Model.currency.Type))
+{
+    <div>
+        <br />
+        @Model.Value @Model.currency.Type is equal to @Model.NewValue @Model.NewCurrency.Type
+    </div>
+
+}
+
